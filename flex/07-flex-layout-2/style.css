@@ -16,26 +16,61 @@ body {
 }
 .header .sub-header{
   font-weight:bold;
-  font-size: larger;
+  font-size: xx-large;
 }
 
 .footer {
+  display: flex;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  justify-content: center;
+  align-items: center;
+}
+.my_footer{
+
+}
+.sidebar ul li {
+  list-style-type: none;
+  margin: 20px;
 }
 
-.sidebar {
-  width: 300px;
-  background: royalblue;
-  height: 810px;
+li a{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+  
 }
+
+
+.sidebar {
+  display: flex;
+  width: 400px;
+  background: royalblue;
+  height: 700px;
+  align-items: flex-start;
+}
+
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
 }
 .bar{
   display: flex;
+}
+ul{
+  flex-shrink: 0;
+}
+.main-body {
+  display: flex;
+  width: 900px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
